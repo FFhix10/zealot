@@ -69,7 +69,7 @@ gem 'rqrcode'
 
 # 异步队列
 gem 'activejob-status'
-gem 'sidekiq', '6.1.2'
+gem 'sidekiq', '6.2.1'
 gem 'sidekiq-cron', github: 'MikeRogers0/sidekiq-cron', branch: 'bug/fix-redis-warning' # See https://github.com/ondrejbartas/sidekiq-cron/issues/286
 
 # Assets
@@ -96,7 +96,7 @@ group :development do
   gem 'guard-bundler'
   gem 'guard-migrate'
   gem 'guard-rails'
-  gem 'guard-sidekiq'
+  gem 'guard-sidekiq', '>= 0.1.0'
   gem 'guard-webpacker'
   gem 'terminal-notifier'
   gem 'terminal-notifier-guard'
